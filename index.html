@@ -32,11 +32,11 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-bs-controls="navbarSupportedContent"
+          aria-bs-expanded="false"
+          aria-bs-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,18 +62,26 @@
                 class="form-switch__label"
               />
               <label class="navbar-nav__switch"
-                ><input type="checkbox" id="mode" checked="true" value="true" />
+                ><input type="checkbox" id="mode" />
                 <div></div>
               </label>
-              <img src="./img/moon.png" alt="" class="form-switch__label m-0" />
+              <img
+                src="./img/moon.png"
+                alt=""
+                class="form-switch__label_moon m-0"
+                id="moon"
+              />
             </li>
           </ul>
 
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav ms-auto btns">
             <li class="nav-item">
               <button class="btn btn-custom__fill text-white fw-bold">
-                Login</button
-              ><button class="btn btn-custom__outlined fw-bold ms-3">
+                Login
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-custom__outlined fw-bold ms-md-3">
                 Register
               </button>
             </li>
@@ -87,21 +95,23 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <h1>
-              Explore new world with
-              <span class="header__title">Edumanager</span>
-            </h1>
-            <p class="header__subtitle text-muted">
-              Find your true passion by joining our class. We have courses that
-              can help you to get what you really want
-            </p>
-            <!-- btns -->
-            <a href="#" role="button" class="header__btn"
-              ><img src="./img/app_store.png" alt="" class=""
-            /></a>
-            <a href="#" role="button" class="header__btn ms-3"
-              ><img src="./img/play_market.png" alt="" class=""
-            /></a>
+            <div class="content">
+              <h1>
+                Explore new world with
+                <span class="header__title">Edumanager</span>
+              </h1>
+              <p class="header__subtitle text-muted">
+                Find your true passion by joining our class. We have courses
+                that can help you to get what you really want
+              </p>
+              <!-- btns -->
+              <a href="#" role="button" class="header__btn"
+                ><img src="./img/app_store.png" alt="" class=""
+              /></a>
+              <a href="#" role="button" class="header__btn ms-3"
+                ><img src="./img/play_market.png" alt="" class=""
+              /></a>
+            </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <!-- img-wrapper -->
@@ -114,7 +124,8 @@
       </div>
     </div>
     <!-- header -->
-
+    <br />
+    <br />
     <section id="feature_1">
       <div class="">
         <div class="d-flex flex-wrap">
@@ -125,50 +136,52 @@
               <img src="./img/mobile_2.svg" alt="" class="image" />
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 features">
-            <h1>Share your daily lifestyle</h1>
-            <p class="text-muted">
-              Edumanager is the next-generation community for students & young
-              professionals to connect to opportunities
-            </p>
-            <!-- features -->
-            <ul class="list-unstyled mt-5">
-              <li class="d-flex my-2">
-                <div class="icon">
-                  <img src="./img/secure-icon.svg" alt="" />
-                </div>
-                <div class="l-item pe-5">
-                  <h4 class="">Secure Transaction</h4>
-                  <p class="text-muted">
-                    Edumanager guarantees the security of every user's profile
-                  </p>
-                </div>
-              </li>
-              <li class="d-flex my-2">
-                <div class="icon">
-                  <img src="./img/mobile_icon.svg" alt="" />
-                </div>
-                <div class="l-item pe-5">
-                  <h4 class="">Original Products</h4>
-                  <p class="text-muted">
-                    Don’t worry, all items in the Edumanager are original
-                    products
-                  </p>
-                </div>
-              </li>
-              <li class="d-flex my-2">
-                <div class="icon">
-                  <img src="./img/offline_icon.svg" alt="" />
-                </div>
-                <div class="l-item pe-4">
-                  <h4 class="">Offline Support</h4>
-                  <p class="text-muted">
-                    Edumanager already supports offline mode, make sure you've
-                    updated the application
-                  </p>
-                </div>
-              </li>
-            </ul>
+          <div class="col-md-6 col-sm-12">
+            <div class="features">
+              <h1>Share your daily lifestyle</h1>
+              <p class="text">
+                Edumanager is the next-generation community for students & young
+                professionals to connect to opportunities
+              </p>
+              <!-- features -->
+              <ul class="list-unstyled mt-5">
+                <li class="d-flex my-4">
+                  <div class="icon">
+                    <img src="./img/secure-icon.svg" alt="" />
+                  </div>
+                  <div class="l-item pe-5">
+                    <h4 class="">Secure Transaction</h4>
+                    <p class="text">
+                      Edumanager guarantees the security of every user's profile
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex my-4">
+                  <div class="icon">
+                    <img src="./img/mobile_icon.svg" alt="" />
+                  </div>
+                  <div class="l-item pe-5">
+                    <h4 class="">Original Products</h4>
+                    <p class="text">
+                      Don’t worry, all items in the Edumanager are original
+                      products
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex my-4">
+                  <div class="icon">
+                    <img src="./img/offline_icon.svg" alt="" />
+                  </div>
+                  <div class="l-item pe-4">
+                    <h4 class="">Offline Support</h4>
+                    <p class="text">
+                      Edumanager already supports offline mode, make sure you've
+                      updated the application
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -178,7 +191,7 @@
       <div class="">
         <div class="d-flex flex-wrap">
           <div class="col-md-6 col-sm-12">
-            <div class="w-75 ms-5">
+            <div class="content">
               <h1>Choose your favorite education center</h1>
               <p class="text-muted pe-5">
                 It is easy to find your favorite education center and become a
@@ -343,7 +356,7 @@
             </ul>
           </div>
           <div class="col-md-7 col-sm-12">
-            <div class="d-flex">
+            <div class="d-flex flex-wrap">
               <ul class="list-unstyled">
                 <li><p class="fw-bold">Sitemap</p></li>
                 <li><a href="#" class="text-muted">Home</a></li>
@@ -353,7 +366,7 @@
                   <a href="#testimonial" class="text-muted">Testimonial</a>
                 </li>
               </ul>
-              <ul class="list-unstyled ms-5 ps-5">
+              <ul class="list-unstyled">
                 <li><p class="fw-bold">Utility</p></li>
                 <li><a href="#header" class="text-muted">FAQ</a></li>
                 <li>
@@ -369,8 +382,13 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Bootstrap js -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
     <!-- boxicons -->
